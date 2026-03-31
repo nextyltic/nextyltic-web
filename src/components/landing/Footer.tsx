@@ -20,7 +20,7 @@ const Footer = () => (
         <div>
           <h4 className="font-bold text-sm mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
-            <li>hello@adscalepro.com</li>
+            <li>leads.nextyltic@gmail.com</li>
             <li>Placeholder address</li>
             <li>Placeholder phone</li>
           </ul>

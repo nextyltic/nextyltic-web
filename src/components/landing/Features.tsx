@@ -1,12 +1,12 @@
-import { Target, TrendingUp, Users, Layers, PieChart, Shield } from "lucide-react";
+import { Target, CircleCheckBig, TrendingUp, Users, Layers, PieChart, Shield } from "lucide-react";
 
 const features = [
-  { icon: Target, title: "Precision Targeting", desc: "We leverage advanced audience research and lookalike modeling to reach your ideal customers." },
-  { icon: TrendingUp, title: "Conversion Optimization", desc: "Every campaign is optimized for conversions, not vanity metrics—real results that matter." },
-  { icon: Users, title: "Dedicated Account Manager", desc: "You get a personal strategist who knows your brand inside and out." },
-  { icon: Layers, title: "Full-Funnel Strategy", desc: "From awareness to retargeting to conversion—we cover every stage of the buyer journey." },
-  { icon: PieChart, title: "Transparent Reporting", desc: "Weekly performance reports with clear insights and actionable recommendations." },
-  { icon: Shield, title: "Ad Account Safety", desc: "We follow Facebook's best practices to keep your account compliant and protected." },
+  { icon: CircleCheckBig, title: "Tested Ads by Thousands of Businesses", desc: "no guessing, only proven campaigns." },
+  { icon: TrendingUp, title: "Conversion Optimization", desc: "every campaign designed to drive results." },
+  { icon: Users, title: "Full-Funnel Strategy Options", desc: "awareness, retargeting, conversion." },
+  { icon: Layers, title: "Ad Management", desc: "we handle everything so you don’t have to." },
+  { icon: PieChart, title: "Optional Sales Agent", desc: "follow up with leads and book them on your calendar." },
+  { icon: Shield, title: "Real-Time Analytics", desc: "we track performance and make data-driven decisions." },
 ];
 
 const Features = () => (
@@ -18,7 +18,7 @@ const Features = () => (
           Everything You Need to <span className="gradient-text">Win with Ads</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Our comprehensive service handles every aspect of your Facebook advertising.
+          Our all-in-one service takes care of every aspect of your Facebook advertising.
         </p>
       </div>
 

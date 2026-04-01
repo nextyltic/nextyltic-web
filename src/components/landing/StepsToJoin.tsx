@@ -1,8 +1,8 @@
 const steps = [
-  { num: "01", title: "Submit Your Application", desc: "Fill out our quick qualifying form so we can learn about your business and advertising goals." },
-  { num: "02", title: "Discovery Call", desc: "If you're a good fit, we'll schedule a free strategy call to discuss your needs in detail." },
-  { num: "03", title: "Onboarding & Setup", desc: "We set up tracking, audiences, creatives, and launch your first optimized campaigns." },
-  { num: "04", title: "Growth & Scaling", desc: "Watch your campaigns perform while we continuously optimize for maximum ROI." },
+  { num: "01", title: "Submit Your Application", desc: "Fill out our quick qualifying form so we can understand your business and advertising goals." },
+  { num: "02", title: "Discovery Call", desc: "If you’re a good fi t, we’ll schedule a free strategy call to discuss your needs in detail." },
+  { num: "03", title: "Onboarding & Setup", desc: "We’ll set up tracking, audiences, and creatives, and launch your fi rst optimized campaigns." },
+  { num: "04", title: "Growth & Scaling", desc: "Watch your campaigns perform as we continuously optimize for maximum ROI." },
 ];
 
 const StepsToJoin = () => (
@@ -14,7 +14,7 @@ const StepsToJoin = () => (
           Steps to <span className="gradient-text">Join Us</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Getting started is easy. Here's your roadmap to better ads.
+          Getting started is easy—here’s your roadmap to better ads.
         </p>
       </div>
 

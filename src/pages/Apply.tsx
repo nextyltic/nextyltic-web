@@ -71,7 +71,7 @@ const Apply = () => {
           <Link to="/" className="text-muted-foreground hover:text-foreground transition-colors">
             <ArrowLeft className="w-5 h-5" />
           </Link>
-          <span className="text-xl font-bold gradient-text">AdScale Pro</span>
+          <span className="text-lg lg:text-xl font-bold gradient-text">Nextyltic Ads Management</span>
         </div>
       </div>
 
@@ -110,7 +110,7 @@ const Apply = () => {
                 </p>
               </div>
             </div>
-            <div
+            {/* <div
               className="w-48 mr-4 lg:mr-0 lg:w-80 abs abs-middle end-0 xs-hide"
               style={{ backgroundSize: "cover", backgroundRepeat: "no-repeat" }}
             >
@@ -125,7 +125,7 @@ const Apply = () => {
                   animationName: "scaleIn"
                 }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div
@@ -175,7 +175,7 @@ const Apply = () => {
           onSubmit={handleSubmit}
           className="space-y-6"
         >
-          <input type='hidden' name='subject' value='New Facebook Ads Management Application' />
+          <input type='hidden' name='subject' value='New Nextyltic Ads Management Application' />
           {/* StaticForms access key*/}
           <input type="hidden" name="accessKey" value="sf_8f020568011aa14e0a37d5f7" />
 
@@ -185,29 +185,42 @@ const Apply = () => {
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="name">Full Name</Label>
+                <Label htmlFor="name">Full Name *</Label>
                 <Input id="name" name="name" placeholder="John Doe" required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">Email Address *</Label>
                 <Input id="email" name="email" type="email" placeholder="john@company.com" required />
               </div>
             </div>
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
-                <Label htmlFor="phone">Phone Number</Label>
+                <Label htmlFor="phone">Phone Number *</Label>
                 <Input id="phone" name="phone" type="tel" placeholder="+1 (555) 000-0000" required />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="company">Company / Brand Name</Label>
+                <Label htmlFor="company">Business Name *</Label>
                 <Input id="company" name="$company" placeholder="Acme Inc." required />
               </div>
             </div>
 
-            <div className="space-y-2">
-              <Label htmlFor="website">Website URL</Label>
-              <Input id="website" name="$website" type="url" placeholder="https://yoursite.com" required />
+            <div className="">
+              <div className="space-y-2">
+                <Label htmlFor="companyAddress">Business Address *</Label>
+                <Input id="companyAddress" name="$companyAddress" type="text" placeholder="123 Main St, City, State 12345" required />
+              </div>
+            </div>
+
+            <div className="grid sm:grid-cols-2 gap-4">
+              <div className="space-y-2">
+                <Label htmlFor="website">Business Website *</Label>
+                <Input id="website" name="$website" type="text" placeholder="yoursite.com" required />
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="company">Business Facebook Page *</Label>
+                <Input id="company" name="$companyFacebookPage" type="text" placeholder="https://facebook.com/yourbusiness" required />
+              </div>
             </div>
           </div>
 
@@ -216,27 +229,26 @@ const Apply = () => {
             <h2 className="font-bold text-lg">Qualifying Questions</h2>
 
             <div className="space-y-2">
-              <Label htmlFor="industry">What industry are you in?</Label>
+              <Label htmlFor="industry">What industry are you in? *</Label>
               <Input id="industry" name="$industry" placeholder="e.g., E-commerce, SaaS, Local Services" required />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="budget">What is your monthly ad budget?</Label>
-              <Select name="$monthlyBudget" required>
+              <Label htmlFor="budget">Selected Package *</Label>
+              <Select name="$package" required>
                 <SelectTrigger>
-                  <SelectValue placeholder="Select your budget range" />
+                  <SelectValue placeholder="Select your Package" />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="Under $1,000">Under $1,000</SelectItem>
-                  <SelectItem value="$1,000 - $3,000">$1,000 – $3,000</SelectItem>
-                  <SelectItem value="$3,000 - $10,000">$3,000 – $10,000</SelectItem>
-                  <SelectItem value="$10,000 - $30,000">$10,000 – $30,000</SelectItem>
-                  <SelectItem value="$30,000+">$30,000+</SelectItem>
+                  <SelectItem value="Starter">Starter</SelectItem>
+                  <SelectItem value="Growth">Growth</SelectItem>
+                  <SelectItem value="Scale">Scale</SelectItem>
+                  <SelectItem value="VIP">VIP</SelectItem>
                 </SelectContent>
               </Select>
             </div>
 
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <Label htmlFor="currentAds">Are you currently running Facebook/Instagram ads?</Label>
               <Select name="$currentlyRunningAds" required>
                 <SelectTrigger>
@@ -249,9 +261,9 @@ const Apply = () => {
                   <SelectItem value="No, never">No, I've never run ads</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
+            </div> */}
 
-            <div className="space-y-2">
+            {/* <div className="space-y-2">
               <Label htmlFor="monthlyRevenue">What is your approximate monthly revenue?</Label>
               <Select name="$monthlyRevenue" required>
                 <SelectTrigger>
@@ -265,47 +277,30 @@ const Apply = () => {
                   <SelectItem value="$500K+">$500K+</SelectItem>
                 </SelectContent>
               </Select>
-            </div>
+            </div> */}
 
             <div className="space-y-2">
-              <Label htmlFor="goals">What are your primary advertising goals?</Label>
+              <Label htmlFor="setupFee">Are you able to pay the setup fee and recurring retainer? (This is not your ad budget) *</Label>
               <Textarea
-                id="goals"
-                name="$advertisingGoals"
-                placeholder="e.g., Generate more leads, increase online sales, build brand awareness..."
+                id="setupFee"
+                name="$setupFee"
+                placeholder="Please explain your budget constraints..."
                 rows={3}
                 required
               />
             </div>
 
             <div className="space-y-2">
-              <Label htmlFor="timeline">How soon are you looking to get started?</Label>
-              <Select name="$timeline" required>
-                <SelectTrigger>
-                  <SelectValue placeholder="Select timeline" />
-                </SelectTrigger>
-                <SelectContent>
-                  <SelectItem value="Immediately">Immediately</SelectItem>
-                  <SelectItem value="Within 2 weeks">Within 2 weeks</SelectItem>
-                  <SelectItem value="Within a month">Within a month</SelectItem>
-                  <SelectItem value="Just exploring">Just exploring options</SelectItem>
-                </SelectContent>
-              </Select>
+              <Label htmlFor="monthlyBudget">Monthly Ad Budget *</Label>
+              <Input id="monthlyBudget" name="$monthlyBudget" placeholder="e.g., $1,000 - $5,000" required />
             </div>
-
             <div className="space-y-2">
-              <Label htmlFor="hear">How did you hear about us?</Label>
-              <Input id="hear" name="$howDidYouHear" placeholder="e.g., Google, referral, social media" required />
+              <Label htmlFor="timeline">How soon are you looking to start? *</Label>
+              <Input id="timeline" name="$timeline" placeholder="e.g., Immediately, Within 2 weeks" required />
             </div>
-
             <div className="space-y-2">
-              <Label htmlFor="additional">Anything else you'd like us to know?</Label>
-              <Textarea
-                id="additional"
-                name="message"
-                placeholder="Share any additional details about your business or goals..."
-                rows={3}
-              />
+              <Label htmlFor="currentlyRunningAds">Are you currently running Facebook ads or other methods to get leads? *</Label>
+              <Input id="currentlyRunningAds" name="$currentlyRunningAds" placeholder="e.g., Yes, No" required />
             </div>
           </div>
 

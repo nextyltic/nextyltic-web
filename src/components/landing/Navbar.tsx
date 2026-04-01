@@ -17,12 +17,12 @@ const Navbar = () => {
   return (
     <nav className="navbar bg-white border-b border-border fixed left-0 margin max-w-max right-0 shadow-2xl top-0 z-50">
       <div className="container flex items-center justify-between h-16">
-        <a href="#" className="text-xl font-bold gradient-text">
-          AdScale Pro
+        <a href="#" className="text-md lg:text-xl font-bold gradient-text">
+          Nextyltic Ads Management
         </a>
 
         {/* Desktop */}
-        <div className="hidden md:flex items-center gap-8">
+        <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((l) => (
             <a
               key={l.href}
@@ -38,14 +38,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile toggle */}
-        <button className="md:hidden" onClick={() => setOpen(!open)}>
+        <button className="lg:hidden" onClick={() => setOpen(!open)}>
           {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
         </button>
       </div>
 
       {/* Mobile menu */}
       {open && (
-        <div className="md:hidden bg-background border-b border-border pb-4">
+        <div className="lg:hidden bg-background border-b border-border pb-4">
           <div className="container flex flex-col gap-3">
             {navLinks.map((l) => (
               <a

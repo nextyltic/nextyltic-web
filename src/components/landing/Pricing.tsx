@@ -8,7 +8,7 @@ const plans = [
     price: "$997",
     period: "/month",
     desc: "Perfect for small businesses just getting started with Facebook ads.",
-    features: ["Up to $3K/mo ad spend", "1 campaign", "Bi-weekly reports", "Email support", "Basic audience targeting"],
+    features: ["1 ad campaign", "Leads sent to your Facebook & Messenger", "$2,500 setup fee"],
     popular: false,
   },
   {
@@ -16,7 +16,7 @@ const plans = [
     price: "$1,997",
     period: "/month",
     desc: "Ideal for growing brands ready to scale their advertising.",
-    features: ["Up to $10K/mo ad spend", "3 campaigns", "Weekly reports", "Priority support", "Advanced audience research", "A/B creative testing"],
+    features: ["1 ad campaign", "Custom Facebook lead form with qualifying questions", "$2,500 setup fee"],
     popular: true,
   },
   {
@@ -24,15 +24,15 @@ const plans = [
     price: "$3,497",
     period: "/month",
     desc: "For established businesses with aggressive growth targets.",
-    features: ["Up to $30K/mo ad spend", "Unlimited campaigns", "Weekly reports & calls", "Dedicated strategist", "Full-funnel strategy", "Custom creative briefs"],
+    features: ["1 ad campaign", "Funnel landing page to capture qualified leads", "$5000 setup fee"],
     popular: false,
   },
   {
-    name: "Enterprise",
-    price: "Custom",
-    period: "",
+    name: "VIP",
+    price: "$5,000",
+    period: "/month",
     desc: "Tailored solutions for high-volume advertisers.",
-    features: ["$30K+ ad spend", "Unlimited campaigns", "Daily monitoring", "Dedicated team", "Custom dashboards", "SLA guarantee", "Multi-platform support"],
+    features: ["1 ad campaign", "Funnel landing page to capture qualified leads", "Lead follow-up agent to email leads and book directly on your calendar", "$5000 setup fee"],
     popular: false,
   },
 ];
@@ -67,7 +67,7 @@ const Pricing = () => (
               <span className="text-3xl font-black">{p.price}</span>
               <span className="text-muted-foreground text-sm">{p.period}</span>
             </div>
-            <p className="text-sm text-muted-foreground mb-6">{p.desc}</p>
+            {/* <p className="text-sm text-muted-foreground mb-6">{p.desc}</p> */}
 
             <ul className="space-y-3 mb-8 flex-1">
               {p.features.map((f) => (
@@ -86,6 +86,9 @@ const Pricing = () => (
           </div>
         ))}
       </div>
+      <p className="text-muted-foreground mt-10 text-center mx-auto">
+        Note: All extra ad campaigns incur additional charges.
+      </p>
     </div>
   </section>
 );

@@ -1,10 +1,10 @@
-import { Zap, HeartHandshake, Clock, Award } from "lucide-react";
+import { Zap, HeartHandshake, Clock, Award, ShieldCheck } from "lucide-react";
 
 const specials = [
-  { icon: Zap, title: "Speed to Results", desc: "Most clients see measurable improvements within the first 14 days of working with us." },
-  { icon: HeartHandshake, title: "Partnership Approach", desc: "We don't just manage your ads—we become an extension of your marketing team." },
-  { icon: Clock, title: "24/7 Monitoring", desc: "Your campaigns are monitored around the clock to catch opportunities and prevent wasted spend." },
-  { icon: Award, title: "Proven Track Record", desc: "Over $10M+ in managed ad spend with a 4.2x average ROAS across our client portfolio." },
+  { icon: ShieldCheck, title: "Proven Ads", desc: "tested campaigns with no guesswork." },
+  { icon: HeartHandshake, title: "Partnership Approach", desc: "we become an extension of your team." },
+  { icon: Clock, title: "Full Management & Monitoring", desc: "we handle everything and keep campaigns optimized." },
+  { icon: Award, title: "Proven System", desc: "trusted by 15,000+ businesses." },
 ];
 
 const WhatMakesUsSpecial = () => (
@@ -16,7 +16,7 @@ const WhatMakesUsSpecial = () => (
           What Makes Us <span className="gradient-text">Different</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          We're not your average agency. Here's what sets us apart.
+          We’re not your average agency—here’s what sets us apart.
         </p>
       </div>
 

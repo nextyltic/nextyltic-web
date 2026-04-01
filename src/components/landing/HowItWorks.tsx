@@ -4,12 +4,12 @@ const steps = [
   {
     icon: ClipboardCheck,
     title: "Apply & Qualify",
-    desc: "Fill out our quick application form so we can understand your business and goals.",
+    desc: "Fill out a quick application so we can understand your business, goals, and see if we’re a good fit.",
   },
   {
     icon: Search,
-    title: "Strategy Session",
-    desc: "We conduct a deep-dive audit of your current ads and build a custom strategy.",
+    title: "Strategy Call",
+    desc: "We conduct a deep dive of your current ads and goals to build a custom strategy for your business.",
   },
   {
     icon: Rocket,
@@ -18,8 +18,8 @@ const steps = [
   },
   {
     icon: BarChart3,
-    title: "Optimize & Report",
-    desc: "We continuously refine your campaigns and provide transparent weekly reports.",
+    title: "Ad Management",
+    desc: "We continuously manage and optimize your campaigns for the best possible results.",
   },
 ];
 
@@ -32,7 +32,7 @@ const HowItWorks = () => (
           Four Simple Steps to <span className="gradient-text">Better Ads</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Our proven process takes the guesswork out of Facebook advertising.
+          Our proven process removes the guesswork from Facebook advertising.
         </p>
       </div>
 

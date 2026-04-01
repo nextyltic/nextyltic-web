@@ -2,27 +2,23 @@ import { Star } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Mitchell",
-    role: "CEO, Bloom Beauty Co.",
-    quote: "AdScale Pro transformed our Facebook advertising. We went from burning money to generating a consistent 5x ROAS within 60 days.",
+    name: "— Chris",
+    quote: "Proven ad templates available. Takes the guesswork out of the mix. I won’t ever run Facebook ads without this. It’s a non-negotiable.",
     rating: 5,
   },
   {
-    name: "James Rodriguez",
-    role: "Founder, FitLife Supplements",
-    quote: "Their team is incredibly responsive and strategic. They don't just run ads—they genuinely care about our growth.",
+    name: "— Viviane",
+    quote: "Simplified the process and made it easy to move forward with running ads.",
     rating: 5,
   },
   {
-    name: "Emily Chen",
-    role: "Marketing Director, HomeStyle Decor",
-    quote: "We've worked with 3 agencies before. AdScale Pro is the first one that actually delivered on their promises. Highly recommend.",
+    name: "— Joe",
+    quote: "Gave me clarity, simplicity, and a clear path forward with real opportunity.",
     rating: 5,
   },
   {
-    name: "David Park",
-    role: "Owner, Park Dental Group",
-    quote: "As a local business, I was skeptical about Facebook ads. They built campaigns that filled my appointment calendar in weeks.",
+    name: "— Tyler",
+    quote: "Provided the right insights and action steps to move forward and improve results.",
     rating: 5,
   },
 ];
@@ -36,7 +32,7 @@ const Testimonials = () => (
           Trusted by <span className="gradient-text">Growing Brands</span>
         </h2>
         <p className="text-muted-foreground max-w-xl mx-auto">
-          Don't take our word for it—hear from the businesses we've helped scale.
+          Don’t just take our word for it—hear from the businesses that have used the same Facebook ads system.
         </p>
       </div>
 
@@ -51,7 +47,6 @@ const Testimonials = () => (
             <p className="text-foreground mb-6 leading-relaxed italic">"{t.quote}"</p>
             <div>
               <p className="font-bold text-sm">{t.name}</p>
-              <p className="text-xs text-muted-foreground">{t.role}</p>
             </div>
           </div>
         ))}

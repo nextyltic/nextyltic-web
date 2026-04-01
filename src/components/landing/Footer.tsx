@@ -3,9 +3,9 @@ const Footer = () => (
     <div className="container max-w-6xl">
       <div className="grid md:grid-cols-4 gap-8">
         <div className="md:col-span-2">
-          <span className="text-xl font-bold gradient-text">AdScale Pro</span>
+          <span className="text-xl font-bold gradient-text">Nextyltic Ads Management</span>
           <p className="text-sm text-muted-foreground mt-3 max-w-sm">
-            Professional Facebook ad management for businesses ready to scale. Placeholder footer content—final version coming soon.
+            Professional Facebook ad management for businesses ready to scale.
           </p>
         </div>
         <div>
@@ -17,17 +17,17 @@ const Footer = () => (
             <li><a href="#faq" className="hover:text-foreground transition-colors">FAQ</a></li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <h4 className="font-bold text-sm mb-3">Contact</h4>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>leads.nextyltic@gmail.com</li>
             <li>Placeholder address</li>
             <li>Placeholder phone</li>
           </ul>
-        </div>
+        </div> */}
       </div>
       <div className="border-t border-border mt-10 pt-6 text-center text-xs text-muted-foreground">
-        © 2026 AdScale Pro. All rights reserved. (Placeholder)
+        © 2026 Nextyltic Ads Management. All rights reserved. (Placeholder)
       </div>
     </div>
   </footer>

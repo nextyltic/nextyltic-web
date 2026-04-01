@@ -25,7 +25,6 @@ const Index = () => (
     <CaseStudies />
     <FAQ />
     <Summary />
-    <CTASection />
     <Footer />
   </>
 );

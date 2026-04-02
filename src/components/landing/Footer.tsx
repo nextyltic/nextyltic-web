@@ -27,7 +27,7 @@ const Footer = () => (
         </div> */}
       </div>
       <div className="border-t border-border mt-10 pt-6 text-center text-xs text-muted-foreground">
-        © 2026 Nextyltic Ads Management. All rights reserved. (Placeholder)
+        © {new Date().getFullYear()} Nextyltic Ads Management. All rights reserved.
       </div>
     </div>
   </footer>

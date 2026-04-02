@@ -11,16 +11,11 @@ const cases = [
     MRR: "$25K/month",
     result: "Grew to $25,000 in monthly revenue leveraging this Facebook ad system.",
   },
-];
-const mediaAgency = [
   {
     company: "Media Agency",
     MRR: "+$36K Revenue",
     result: "Generated $36,000 in additional revenue using this Facebook ad system.",
   },
-];
-
-const Business = [
   {
     company: "Local Business",
     MRR: "$200K MRR",
@@ -65,46 +60,6 @@ const CaseStudies = () => (
       </h2>
       <div className="grid lg:grid-cols-3 gap-8">
         {cases.map((c) => (
-          <div key={c.company} className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow">
-            <div className="gradient-hero p-6">
-              <TrendingUp className="w-8 h-8 text-primary-foreground mb-2" />
-              <h3 className="text-xl font-bold text-primary-foreground">{c.company}</h3>
-              <p className="text-primary-foreground/70 text-sm">{c.MRR}</p>
-            </div>
-            <div className="p-6">
-
-              <div className="mb-6">
-                <p className="text-sm text-foreground">{c.result}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="text-2xl md:text-3xl text-center font-black mt-10 mb-10">
-        Media Success Stories
-      </h2>
-      <div className="grid lg:grid-cols-3 gap-8">
-        {mediaAgency.map((c) => (
-          <div key={c.company} className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow">
-            <div className="gradient-hero p-6">
-              <TrendingUp className="w-8 h-8 text-primary-foreground mb-2" />
-              <h3 className="text-xl font-bold text-primary-foreground">{c.company}</h3>
-              <p className="text-primary-foreground/70 text-sm">{c.MRR}</p>
-            </div>
-            <div className="p-6">
-
-              <div className="mb-6">
-                <p className="text-sm text-foreground">{c.result}</p>
-              </div>
-            </div>
-          </div>
-        ))}
-      </div>
-      <h2 className="text-2xl md:text-3xl text-center font-black mt-10 mb-10">
-        Business Success Stories
-      </h2>
-      <div className="grid lg:grid-cols-3 gap-8">
-        {Business.map((c) => (
           <div key={c.company} className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-shadow">
             <div className="gradient-hero p-6">
               <TrendingUp className="w-8 h-8 text-primary-foreground mb-2" />

@@ -215,11 +215,11 @@ const Apply = () => {
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="space-y-2">
                 <Label htmlFor="website">Business Website *</Label>
-                <Input id="website" name="$website" type="text" placeholder="yoursite.com" required />
+                <Input id="website" name="$website" type="text" placeholder="" required />
               </div>
               <div className="space-y-2">
                 <Label htmlFor="company">Business Facebook Page *</Label>
-                <Input id="company" name="$companyFacebookPage" type="text" placeholder="https://facebook.com/yourbusiness" required />
+                <Input id="company" name="$companyFacebookPage" type="text" placeholder="" required />
               </div>
             </div>
           </div>
